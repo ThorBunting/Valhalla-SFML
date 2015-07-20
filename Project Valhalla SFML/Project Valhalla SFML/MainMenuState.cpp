@@ -1,4 +1,5 @@
 #include "MainMenuState.h"
+#include "TestLevelState.h"
 
 MainMenuState *MainMenuState::m_instance(nullptr);
 
@@ -21,8 +22,8 @@ MainMenuState::~MainMenuState()
 
 void MainMenuState::Init()
 {
-	shape.setRadius(100);
-	shape.setFillColor(sf::Color::Green);
+	m_backgroundTex.loadFromFile("Media/Art/MainMenu.png");
+	m_backgroundSprite.setTexture(m_backgroundTex);
 }
 
 void MainMenuState::Cleanup()
@@ -42,12 +43,20 @@ void MainMenuState::OnExit()
 
 void MainMenuState::Update()
 {
-	
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
+	{
+		STATE.ChangeState(&TESTLEVEL);
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+	{
+		// Remove this state and prompt manager to close, manager should auto close when no states are active.
+	}
 }
 
 void MainMenuState::Draw(sf::RenderWindow &window)
 {
 	window.clear();
-	window.draw(shape);
+	window.draw(m_backgroundSprite);
 	window.display();
 }

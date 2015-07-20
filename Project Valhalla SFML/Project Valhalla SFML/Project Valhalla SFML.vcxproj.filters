@@ -13,27 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="States &amp; State Management">
+      <UniqueIdentifier>{8a33eff7-70fb-4263-8423-62897547692d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{785f9763-8883-45cd-878e-1d74dddb7a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML Handling">
+      <UniqueIdentifier>{730115cf-4eb5-4346-aa86-b94b3fd64297}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StateManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>States &amp; State Management</Filter>
     </ClCompile>
     <ClCompile Include="MainMenuState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>States &amp; State Management</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLevelState.cpp">
+      <Filter>States &amp; State Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StateManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>States &amp; State Management</Filter>
     </ClInclude>
     <ClInclude Include="MainMenuState.h">
-      <Filter>Header Files</Filter>
+      <Filter>States &amp; State Management</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>States &amp; State Management</Filter>
+    </ClInclude>
+    <ClInclude Include="TestLevelState.h">
+      <Filter>States &amp; State Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

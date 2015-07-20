@@ -25,7 +25,8 @@ protected:
 private:
 	static MainMenuState *m_instance;
 
-	sf::CircleShape shape;
+	sf::Texture m_backgroundTex;
+	sf::Sprite m_backgroundSprite;
 
 };
 

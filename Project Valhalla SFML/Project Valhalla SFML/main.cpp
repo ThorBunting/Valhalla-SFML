@@ -4,7 +4,7 @@
 
 int main()
 {
-	sf::RenderWindow mainWindow(sf::VideoMode(1024, 768), "SFML works!");
+	sf::RenderWindow mainWindow(sf::VideoMode(1024, 768), "Project Valhalla SFML");
 
 	STATE.ChangeState(&MAINMENU);
 
