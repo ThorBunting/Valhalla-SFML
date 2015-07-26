@@ -16,11 +16,6 @@ public:
 	virtual void Update() = 0;
 	virtual void Draw(sf::RenderWindow &window) = 0;
 
-	//virtual void ChangeState(StateManager* stateManager, GameState* state)
-	//{
-	//	stateManager->ChangeState(state);
-	//}
-
 protected:
 	GameState() { }
 

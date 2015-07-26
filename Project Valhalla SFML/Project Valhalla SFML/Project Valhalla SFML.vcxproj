@@ -142,6 +142,7 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
+    <ClCompile Include="PauseMenuState.cpp" />
     <ClCompile Include="StateManager.cpp" />
     <ClCompile Include="TestLevelState.cpp" />
   </ItemGroup>
@@ -149,6 +150,7 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="MainMenuState.h" />
+    <ClInclude Include="PauseMenuState.h" />
     <ClInclude Include="StateManager.h" />
     <ClInclude Include="TestLevelState.h" />
   </ItemGroup>

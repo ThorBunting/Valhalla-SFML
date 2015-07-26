@@ -1,21 +1,18 @@
-﻿Build started 12/07/2015 21:17:49.
-     1>Project "D:\Downloads\Mem Stick Sort\Project Valhalla\Project Valhalla SFML\Project Valhalla SFML\Project Valhalla SFML.vcxproj" on node 2 (Build target(s)).
+﻿Build started 25/07/2015 21:41:13.
+     1>Project "M:\Work\Git\Valhalla-SFML\Project Valhalla SFML\Project Valhalla SFML\Project Valhalla SFML.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files\Microsoft Visual Studio Professional 2013\VC\bin\x86_amd64\CL.exe /c /I"SFML-2.2\include" /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /sdl /Od /D SFML_STATIC /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt TestLevelState.cpp
-         TestLevelState.cpp
-     1>TestLevelState.cpp(58): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>TestLevelState.cpp(63): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>TestLevelState.cpp(68): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>TestLevelState.cpp(73): warning C4305: 'argument' : truncation from 'double' to 'float'
+         D:\Program Files\Microsoft Visual Studio Professional 2013\VC\bin\x86_amd64\CL.exe /c /I"SFML-2.2\include" /I"D:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /sdl /Od /D SFML_STATIC /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt PauseMenuState.cpp
+         PauseMenuState.cpp
        Link:
-         D:\Program Files\Microsoft Visual Studio Professional 2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Downloads\Mem Stick Sort\Project Valhalla\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.exe" /INCREMENTAL /NOLOGO /LIBPATH:"SFML-2.2\lib" /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win64" jpeg.lib freetype.lib glew.lib gdi32.lib opengl32.lib winmm.lib "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Downloads\Mem Stick Sort\Project Valhalla\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Downloads\Mem Stick Sort\Project Valhalla\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.lib" /MACHINE:X64 x64\Debug\Entity.obj
+         D:\Program Files\Microsoft Visual Studio Professional 2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"M:\Work\Git\Valhalla-SFML\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.exe" /INCREMENTAL /NOLOGO /LIBPATH:"SFML-2.2\lib" /LIBPATH:"D:\Program Files (x86)\Visual Leak Detector\lib\Win64" jpeg.lib freetype.lib glew.lib gdi32.lib opengl32.lib winmm.lib "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"M:\Work\Git\Valhalla-SFML\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\Work\Git\Valhalla-SFML\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.lib" /MACHINE:X64 x64\Debug\Entity.obj
          x64\Debug\main.obj
          x64\Debug\MainMenuState.obj
+         x64\Debug\PauseMenuState.obj
          x64\Debug\StateManager.obj
          x64\Debug\TestLevelState.obj
-         Project Valhalla SFML.vcxproj -> D:\Downloads\Mem Stick Sort\Project Valhalla\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.exe
-     1>Done Building Project "D:\Downloads\Mem Stick Sort\Project Valhalla\Project Valhalla SFML\Project Valhalla SFML\Project Valhalla SFML.vcxproj" (Build target(s)).
+         Project Valhalla SFML.vcxproj -> M:\Work\Git\Valhalla-SFML\Project Valhalla SFML\x64\Debug\Project Valhalla SFML.exe
+     1>Done Building Project "M:\Work\Git\Valhalla-SFML\Project Valhalla SFML\Project Valhalla SFML\Project Valhalla SFML.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.71
+Time Elapsed 00:00:01.40

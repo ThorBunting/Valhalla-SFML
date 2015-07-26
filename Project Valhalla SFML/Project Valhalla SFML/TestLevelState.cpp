@@ -1,5 +1,6 @@
 #include "TestLevelState.h"
 #include "MainMenuState.h"
+#include "PauseMenuState.h"
 
 TestLevelState *TestLevelState::m_instance(nullptr);
 
@@ -50,7 +51,8 @@ void TestLevelState::Update()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
 	{
-		//Pause Menu
+		STATE.ChangeState(&PAUSEMENU);
+		// Set timescale to 0;
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
