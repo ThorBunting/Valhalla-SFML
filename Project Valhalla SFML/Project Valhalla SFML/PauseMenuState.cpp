@@ -34,6 +34,7 @@ void PauseMenuState::Cleanup()
 void PauseMenuState::OnEntry()
 {
 	m_backgroundDrawn = false;
+	m_inputTimer.restart();
 }
 
 void PauseMenuState::OnExit()
@@ -43,14 +44,18 @@ void PauseMenuState::OnExit()
 
 void PauseMenuState::Update()
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::O))
+	if (m_inputTimer.getElapsedTime().asSeconds() > 0.2f)
 	{
-		STATE.RemoveState();
-	}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
+		{
+			STATE.RemoveState();
+		}
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-	{
-		// Exit the game.
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+		{
+			// Exit the game. - Best way to do this?
+			// Able to do this with a bool, and manually call window.close in the draw function - really bad though.
+		}
 	}
 }
 

@@ -30,6 +30,8 @@ private:
 
 	sf::Texture m_playerTex;
 	sf::Sprite m_playerSprite;
+
+	sf::Clock m_inputTimer;
 };
 
 #define TESTLEVEL TestLevelState::GetInstance()

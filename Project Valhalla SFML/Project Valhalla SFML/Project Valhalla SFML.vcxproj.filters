@@ -40,7 +40,7 @@
       <Filter>Entities</Filter>
     </ClCompile>
     <ClCompile Include="PauseMenuState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>States &amp; State Management</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,7 +60,7 @@
       <Filter>Entities</Filter>
     </ClInclude>
     <ClInclude Include="PauseMenuState.h">
-      <Filter>Header Files</Filter>
+      <Filter>States &amp; State Management</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

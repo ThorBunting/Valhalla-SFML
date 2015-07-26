@@ -41,6 +41,7 @@ void TestLevelState::OnEntry()
 {
 	// Count down input timer (need this for all states)
 	// Set timescale to 1;
+	m_inputTimer.restart();
 }
 
 void TestLevelState::OnExit()
@@ -50,10 +51,12 @@ void TestLevelState::OnExit()
 
 void TestLevelState::Update()
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
+	if (m_inputTimer.getElapsedTime().asSeconds() > 0.2f)
 	{
-		STATE.AddState(&PAUSEMENU);
-		// Set timescale to 0;
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+		{
+			STATE.AddState(&PAUSEMENU);
+		}
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
