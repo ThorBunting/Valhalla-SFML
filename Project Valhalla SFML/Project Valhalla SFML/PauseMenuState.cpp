@@ -33,19 +33,19 @@ void PauseMenuState::Cleanup()
 
 void PauseMenuState::OnEntry()
 {
-
+	m_backgroundDrawn = false;
 }
 
 void PauseMenuState::OnExit()
 {
-
+	
 }
 
 void PauseMenuState::Update()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::O))
 	{
-		STATE.ChangeState(&TESTLEVEL);
+		STATE.RemoveState();
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
@@ -56,6 +56,10 @@ void PauseMenuState::Update()
 
 void PauseMenuState::Draw(sf::RenderWindow &window)
 {
-	window.draw(m_backgroundSprite);
-	window.display();
+	if (!m_backgroundDrawn)
+	{
+		window.draw(m_backgroundSprite);
+		window.display();
+		m_backgroundDrawn = true;
+	}
 }

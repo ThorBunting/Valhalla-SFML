@@ -28,6 +28,8 @@ private:
 	sf::Texture m_backgroundTex;
 	sf::Sprite m_backgroundSprite;
 
+	bool m_backgroundDrawn = false;
+
 };
 
 #define MAINMENU MainMenuState::GetInstance()

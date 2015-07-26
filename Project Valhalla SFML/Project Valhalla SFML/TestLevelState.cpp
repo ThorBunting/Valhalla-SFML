@@ -39,19 +39,20 @@ void TestLevelState::Cleanup()
 
 void TestLevelState::OnEntry()
 {
-
+	// Count down input timer (need this for all states)
+	// Set timescale to 1;
 }
 
 void TestLevelState::OnExit()
 {
-
+	// Set timescale to 0;
 }
 
 void TestLevelState::Update()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
 	{
-		STATE.ChangeState(&PAUSEMENU);
+		STATE.AddState(&PAUSEMENU);
 		// Set timescale to 0;
 	}
 

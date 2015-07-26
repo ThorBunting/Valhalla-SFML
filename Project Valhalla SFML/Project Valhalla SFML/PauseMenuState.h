@@ -25,6 +25,9 @@ private:
 	sf::Texture m_backgroundTex;
 	sf::Sprite m_backgroundSprite;
 
+	// Used to draw the menu background only once.
+	bool m_backgroundDrawn = false;
+
 };
 
 #define PAUSEMENU PauseMenuState::GetInstance()

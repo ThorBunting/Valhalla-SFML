@@ -33,7 +33,7 @@ void MainMenuState::Cleanup()
 
 void MainMenuState::OnEntry()
 {
-
+	m_backgroundDrawn = false;
 }
 
 void MainMenuState::OnExit()
@@ -56,7 +56,10 @@ void MainMenuState::Update()
 
 void MainMenuState::Draw(sf::RenderWindow &window)
 {
-	window.clear();
-	window.draw(m_backgroundSprite);
-	window.display();
+	if (!m_backgroundDrawn)
+	{
+		window.clear();
+		window.draw(m_backgroundSprite);
+		window.display();
+	}
 }
